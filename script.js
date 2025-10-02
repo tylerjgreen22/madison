@@ -13,11 +13,19 @@ const onInputClue1 = event => {
     const answer = event.target.value;
     if (answer.toLowerCase() === "forever") {
         document.getElementById("divQuestion2").classList.remove("d-none");
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth"
+        });
     }
 }
 
 const onClickSkipClue1 = () => {
-        document.getElementById("divQuestion2").classList.remove("d-none");
+    document.getElementById("divQuestion2").classList.remove("d-none");
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    });
 }
 
 const onChangeQuestion2 = event => {
@@ -35,11 +43,19 @@ const onInputClue2 = event => {
     const answer = event.target.value;
     if (answer.toLowerCase() === "in love") {
         document.getElementById("divQuestion3").classList.remove("d-none");
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth"
+        });
     }
 }
 
 const onClickSkipClue2 = () => {
-        document.getElementById("divQuestion3").classList.remove("d-none");
+    document.getElementById("divQuestion3").classList.remove("d-none");
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    });
 }
 
 const onChangeQuestion3 = event => {
@@ -57,11 +73,19 @@ const onInputClue3 = event => {
     const answer = event.target.value;
     if (answer.toLowerCase() === "444") {
         document.getElementById("divQuestion4").classList.remove("d-none");
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth"
+        });
     }
 }
 
 const onClickSkipClue3 = () => {
-        document.getElementById("divQuestion4").classList.remove("d-none");
+    document.getElementById("divQuestion4").classList.remove("d-none");
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    });
 }
 
 const onChangeQuestion4 = event => {
@@ -79,11 +103,19 @@ const onInputClue4 = event => {
     const answer = event.target.value;
     if (answer.toLowerCase() === "30") {
         document.getElementById("divQuestion5").classList.remove("d-none");
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth"
+        });
     }
 }
 
 const onClickSkipClue4 = () => {
-        document.getElementById("divQuestion5").classList.remove("d-none");
+    document.getElementById("divQuestion5").classList.remove("d-none");
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    });
 }
 
 const onChangeQuestion5 = event => {
@@ -101,11 +133,19 @@ const onInputClue5 = event => {
     const answer = event.target.value;
     if (answer.toLowerCase() === "doggo") {
         document.getElementById("divClueFinal").classList.remove("d-none");
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth"
+        });
     }
 }
 
 const onClickSkipClue5 = () => {
-        document.getElementById("divClueFinal").classList.remove("d-none");
+    document.getElementById("divClueFinal").classList.remove("d-none");
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    });
 }
 
 window.onload = () => {
