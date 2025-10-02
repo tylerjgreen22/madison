@@ -16,6 +16,10 @@ const onInputClue1 = event => {
     }
 }
 
+const onClickSkipClue1 = () => {
+        document.getElementById("divQuestion2").classList.remove("d-none");
+}
+
 const onChangeQuestion2 = event => {
     const answer = event.target.value;
     if (answer === "dentist") {
@@ -32,6 +36,10 @@ const onInputClue2 = event => {
     if (answer.toLowerCase() === "in love") {
         document.getElementById("divQuestion3").classList.remove("d-none");
     }
+}
+
+const onClickSkipClue2 = () => {
+        document.getElementById("divQuestion3").classList.remove("d-none");
 }
 
 const onChangeQuestion3 = event => {
@@ -52,6 +60,10 @@ const onInputClue3 = event => {
     }
 }
 
+const onClickSkipClue3 = () => {
+        document.getElementById("divQuestion4").classList.remove("d-none");
+}
+
 const onChangeQuestion4 = event => {
     const answer = event.target.value;
     if (answer === "kbbq") {
@@ -70,6 +82,10 @@ const onInputClue4 = event => {
     }
 }
 
+const onClickSkipClue4 = () => {
+        document.getElementById("divQuestion5").classList.remove("d-none");
+}
+
 const onChangeQuestion5 = event => {
     const answer = event.target.value;
     if (answer === "dutch") {
@@ -86,6 +102,10 @@ const onInputClue5 = event => {
     if (answer.toLowerCase() === "doggo") {
         document.getElementById("divClueFinal").classList.remove("d-none");
     }
+}
+
+const onClickSkipClue5 = () => {
+        document.getElementById("divClueFinal").classList.remove("d-none");
 }
 
 window.onload = () => {
@@ -109,4 +129,9 @@ window.onload = () => {
         radio.addEventListener("change", event => onChangeQuestion5(event));
     });
     document.getElementById("clue5").addEventListener("input", event => onInputClue5(event));
+    document.getElementById("btnSkipClue1").addEventListener("click", () => onClickSkipClue1());
+    document.getElementById("btnSkipClue2").addEventListener("click", () => onClickSkipClue2());
+    document.getElementById("btnSkipClue3").addEventListener("click", () => onClickSkipClue3());
+    document.getElementById("btnSkipClue4").addEventListener("click", () => onClickSkipClue4());
+    document.getElementById("btnSkipClue5").addEventListener("click", () => onClickSkipClue5());
 }
